@@ -2,9 +2,7 @@
 
 Lead maintainer: [Buğra Ekuklu](Chatatata)
 
-Automates the deployment process of your Helm references.
-
-Make your charts *git gud*. No pun intended.
+Automates the deployment process of your Helm releases.
 
 ## Installation
 
@@ -16,7 +14,9 @@ $ brew install ekko
 
 ##### Linux (CentOS, Debian, Fedora etc.)
 
-Download the binaries from the [releases page].
+Download the tarball from the [releases page](https://github.com/Chatatata/ekko/releases).
+
+> Unfortunately, Linux support is experimental at the moment.
 
 ## Initializing a new project
 

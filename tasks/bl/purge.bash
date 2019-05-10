@@ -1,4 +1,6 @@
 function delete_solution {
+  dirname=$(dirname $1)
+  solution=`basename $dirname`
   chart=$(/usr/bin/env yq -r .chart $1)
   release=$(/usr/bin/env yq -r .release $1)
   if [ -z "$EKKO_NAMESPACE" ]; then namespace=$(/usr/bin/env yq -r '.namespace' $1); else namespace=$EKKO_NAMESPACE; fi
