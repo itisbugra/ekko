@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+LIB_PATH="/Users/chatatata-mbpr15/Development/ekko-sh"
+
+source "$LIB_PATH/.source.bash"
+
+verify_yq
+verify_helm
+verify_jq
+verify_namespace
+
+run_with_args "$@"

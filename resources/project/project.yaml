@@ -1,0 +1,20 @@
+# Project information
+project:
+  name: sample-deployment
+  version: 0.0.1
+  description: Deployment of sample infrastructure
+  git: # Git URL for the project
+  tags:
+    - sample
+  runner:
+    platform: all
+    version: ">= 0.0.0"
+  authors:
+    - John Appleseed (john@example.com)
+
+# TLS configuration
+tls:
+  files:
+    certificate: ./configuration/tls/fullchain.pem
+    privateKey: ./configuration/tls/privkey.pem
+  namespace: dmz
